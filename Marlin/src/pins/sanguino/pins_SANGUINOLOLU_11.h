@@ -70,8 +70,8 @@
 //
 // Steppers
 //
-#define X_STEP_PIN                            15
-#define X_DIR_PIN                             21
+#define X_STEP_PIN                            1//15
+#define X_DIR_PIN                             0//21
 
 #define Y_STEP_PIN                            22
 #define Y_DIR_PIN                             23
@@ -79,8 +79,8 @@
 #define Z_STEP_PIN                             3
 #define Z_DIR_PIN                              2
 
-#define E0_STEP_PIN                            1
-#define E0_DIR_PIN                             0
+#define E0_STEP_PIN                            15//1
+#define E0_DIR_PIN                             21//0
 
 //
 // Temperature Sensors
@@ -92,6 +92,9 @@
 // Heaters / Fans
 //
 #define HEATER_0_PIN                          13  // (extruder)
+
+#define SERVO0_PIN                            27
+#define SERVO1_PIN                            28
 
 #if ENABLED(SANGUINOLOLU_V_1_2)
 
