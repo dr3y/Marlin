@@ -66,6 +66,7 @@
 #define X_STOP_PIN                            18
 #define Y_STOP_PIN                            19
 #define Z_STOP_PIN                            20
+#define E_STOP_PIN                            7
 
 //
 // Steppers
@@ -85,7 +86,7 @@
 //
 // Temperature Sensors
 //
-#define TEMP_0_PIN                             7  // Analog Input (pin 33 extruder)
+#define TEMP_0_PIN                             6//7  // Analog Input (pin 33 extruder)
 #define TEMP_BED_PIN                           6  // Analog Input (pin 34 bed)
 
 //
