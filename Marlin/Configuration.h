@@ -638,7 +638,7 @@
  * When E_AXIS_HOMING is enabled (#define E_AXIS_HOMING), enabling
  * (USE_EMIN_PLUG or USE_EMAX_PLUG), MIN_SOFTWARE_ENDSTOP_E and MAX_SOFTWARE_ENDSTOP_E (see below) is recommended.
  */
-//#define E_AXIS_HOMING
+#define E_AXIS_HOMING
 
 // Specify here all the endstop connectors that are connected to any endstop or probe.
 // Almost all printers will be using one per axis. Probes will use one or more of the
@@ -1165,9 +1165,9 @@
   #define MIN_SOFTWARE_ENDSTOP_X
   #define MIN_SOFTWARE_ENDSTOP_Y
   #define MIN_SOFTWARE_ENDSTOP_Z
-  #if ENABLED(E_AXIS_HOMING)
-    #define MIN_SOFTWARE_ENDSTOP_E
-  #endif
+  //#if ENABLED(E_AXIS_HOMING)
+  //  #define MIN_SOFTWARE_ENDSTOP_E
+  //#endif
 #endif
 
 // Max software endstops constrain movement within maximum coordinate bounds
@@ -1176,9 +1176,9 @@
   #define MAX_SOFTWARE_ENDSTOP_X
   #define MAX_SOFTWARE_ENDSTOP_Y
   #define MAX_SOFTWARE_ENDSTOP_Z
-  #if ENABLED(E_AXIS_HOMING)
-    #define MAX_SOFTWARE_ENDSTOP_E
-  #endif
+  //#if ENABLED(E_AXIS_HOMING)
+  //  #define MAX_SOFTWARE_ENDSTOP_E
+  //#endif
 #endif
 
 #if EITHER(MIN_SOFTWARE_ENDSTOPS, MAX_SOFTWARE_ENDSTOPS)
