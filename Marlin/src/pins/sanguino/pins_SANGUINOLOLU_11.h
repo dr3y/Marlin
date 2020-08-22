@@ -66,7 +66,7 @@
 #define X_STOP_PIN                            18
 #define Y_STOP_PIN                            19
 #define Z_STOP_PIN                            20
-#define E_MIN_PIN                             7
+#define E_MIN_PIN                             29
 #define E_MAX_PIN                             -1
 
 //
