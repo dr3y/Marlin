@@ -43,7 +43,7 @@
 // Tested this pin with bed leveling on a Delta with 1 servo.
 // Physical wire attachment on EXT1: GND, 5V, D47.
 //
-#define SERVO0_PIN                            47
+#define SERVO0_PIN                            18
 
 //
 // Limit Switches

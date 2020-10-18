@@ -102,7 +102,7 @@
 #endif
 #ifndef Z_STOP_PIN
   #ifndef Z_MIN_PIN
-    #define Z_MIN_PIN                         18
+    #define Z_MIN_PIN                         -1 //18
   #endif
   #ifndef Z_MAX_PIN
     #define Z_MAX_PIN                         19
@@ -113,7 +113,7 @@
 // Z Probe (when not Z_MIN_PIN)
 //
 #ifndef Z_MIN_PROBE_PIN
-  #define Z_MIN_PROBE_PIN                     32
+  #define Z_MIN_PROBE_PIN                     14
 #endif
 
 //
@@ -481,14 +481,14 @@
         #define DOGLCD_SCK                    23
         #define DOGLCD_A0            LCD_PINS_DC
       #else
-        #define LCD_PINS_RS                   16
-        #define LCD_PINS_ENABLE               17
-        #define LCD_PINS_D4                   23
-        #define LCD_PINS_D5                   25
-        #define LCD_PINS_D6                   27
+        #define LCD_PINS_RS                   45
+        #define LCD_PINS_ENABLE               44
+        #define LCD_PINS_D4                   39
+        #define LCD_PINS_D5                   32
+        #define LCD_PINS_D6                   57
       #endif
 
-      #define LCD_PINS_D7                     29
+      #define LCD_PINS_D7                     31
 
       #if DISABLED(NEWPANEL)
         #define BEEPER_PIN                    33
@@ -514,22 +514,22 @@
 
     #if ENABLED(REPRAP_DISCOUNT_SMART_CONTROLLER)
 
-      #define BEEPER_PIN                      37
+      #define BEEPER_PIN                      -1
 
       #if ENABLED(CR10_STOCKDISPLAY)
         #define BTN_EN1                       17
         #define BTN_EN2                       23
       #else
-        #define BTN_EN1                       31
-        #define BTN_EN2                       33
+        #define BTN_EN1                       12
+        #define BTN_EN2                       47
       #endif
 
-      #define BTN_ENC                         35
+      #define BTN_ENC                         63
       #ifndef SD_DETECT_PIN
-        #define SD_DETECT_PIN                 49
+        #define SD_DETECT_PIN                 -1
       #endif
       #ifndef KILL_PIN
-        #define KILL_PIN                      41
+        #define KILL_PIN                      -1
       #endif
 
       #if ENABLED(BQ_LCD_SMART_CONTROLLER)
