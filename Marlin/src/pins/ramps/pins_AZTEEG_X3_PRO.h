@@ -48,9 +48,9 @@
 //
 // Limit Switches
 //
-#define X_STOP_PIN                             3
-#define Y_STOP_PIN                            14
-#define Z_STOP_PIN                            18
+#define X_STOP_PIN                             2
+#define Y_STOP_PIN                            15
+#define Z_STOP_PIN                            19
 
 #ifndef FAN_PIN
   #define FAN_PIN                              6
